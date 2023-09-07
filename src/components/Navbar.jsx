@@ -23,7 +23,9 @@ const Navbar = () => {
       </Link>
       <div className="flex justify-center items-center">
         {user?.email ? (
-          <button className="text-white pr-4">Dashboard</button>
+          <Link to="/dashboard">
+            <button className="text-white pr-4">Dashboard</button>
+          </Link>
         ) : (
           <Link to="/signin">
             <button className="text-white pr-4">Sign In</button>
