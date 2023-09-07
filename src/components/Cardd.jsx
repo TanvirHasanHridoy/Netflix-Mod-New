@@ -26,7 +26,7 @@ const Card = ({ item, serial }) => {
         }),
       });
     } else {
-      alert("Please log in to save a movie");
+      alert("LOG IN TO ADD FAVORITES");
     }
   };
 
