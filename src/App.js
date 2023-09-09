@@ -19,25 +19,25 @@ function App() {
             <Route
               path="/signup"
               element={
-                <Redirect>
-                  <SignUp />
-                </Redirect>
+                // <Redirect>
+                <SignUp />
+                // </Redirect>
               }
             />
             <Route
               path="/signin"
               element={
-                <Redirect>
-                  <SignIn />
-                </Redirect>
+                // <Redirect>
+                <SignIn />
+                // </Redirect>
               }
             />
             <Route
               path="/dashboard"
               element={
-                <ProtectedRoute>
-                  <Dashboard />
-                </ProtectedRoute>
+                // <ProtectedRoute>
+                <Dashboard />
+                // </ProtectedRoute>
               }
             />
           </Routes>

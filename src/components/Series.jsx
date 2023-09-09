@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Card from "./Cardd";
+import { AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai";
 
 const Series = ({ title, fetchingURL, serial }) => {
   const [series, setSeries] = useState([]);
@@ -30,27 +31,34 @@ const Series = ({ title, fetchingURL, serial }) => {
   // console.log("  NAme of series");
   // console.log(series);
   const goRight = () => {
-    var scrollable_area = document.getElementById("scrollable-area" + serial);
-    scrollable_area.scrollLeft = scrollable_area.scrollLeft + 400;
+    var scrollable_areaR = document.getElementById("scrollable_area" + serial);
+    // console.log("scrollable area for right is :::::");
+    // console.log(scrollable_areaR);
+    scrollable_areaR.scrollLeft = scrollable_areaR.scrollLeft + 400;
   };
   const goLeft = () => {
-    var scrollable_area = document.getElementById("scrollable-area" + serial);
-    scrollable_area.scrollLeft = scrollable_area.scrollLeft - 400;
+    var scrollable_areaL = document.getElementById("scrollable-area" + serial);
+    // console.log("scrollable area for Left  is :::::");
+    // console.log(scrollable_areaL);
+    scrollable_areaL.scrollLeft = scrollable_areaL.scrollLeft - 500;
+
+    // var scrollable_area = document.getElementById("scrollable-area" + serial);
+    // scrollable_area.scrollLeft = scrollable_area.scrollLeft - 400;
   };
   return (
     <div className="scroll-smooth m-2 ">
       <div className="h-[240px] w-full p-4 relative flex flex-col ">
         <div className="text-2xl text-white mb-4">{title} </div>
-        <FaChevronLeft
+        <AiOutlineCaretLeft
           onClick={goLeft}
-          className="hover:bg-gray-200 opacity-70  p-2 h-10 w-10 rounded-full absolute top-1/2 -translate-y-1/2 left-[2%] duration-150 hover:scale-110 text-white hover:text-black bg-gray-900 z-40"
+          className="hover:bg-gray-200 opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 left-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
           size={30}
-        ></FaChevronLeft>
-        <FaChevronRight
+        ></AiOutlineCaretLeft>
+        <AiOutlineCaretRight
           onClick={goRight}
           className="hover:bg-gray-200 opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 right-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
           size={30}
-        ></FaChevronRight>
+        ></AiOutlineCaretRight>
         {/* div for storing the images and cards */}
         {/* <div
           id={"scrollable-area" + serial}

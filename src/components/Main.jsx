@@ -5,20 +5,20 @@ const Main = () => {
   const [movies, setMovies] = useState([]);
   const movie = movies[Math.floor(Math.random() * movies.length)];
   useEffect(() => {
-    console.log(process.env.REACT_APP_FRONTEND_API_KEY);
-    console.log("THE LINK IS CURRENTLY");
-    console.log(requests.requestPopularMovies);
+    // console.log(process.env.REACT_APP_FRONTEND_API_KEY);
+    // console.log("THE LINK IS CURRENTLY");
+    // console.log(requests.requestPopularMovies);
     axios.get(requests.requestPopularMovies).then((response) => {
       setMovies(response.data.results);
     });
   }, []);
 
-  console.log("The movies are   ");
-  console.log(movie);
+  // console.log("The movies are   ");
+  // console.log(movie);
 
   function TruncatedString(str, len) {
-    console.log("current window is :" + window.innerWidth);
-    console.log("current length is :" + len);
+    // console.log("current window is :" + window.innerWidth);
+    // console.log("current length is :" + len);
     if (str?.length > len) {
       return str.slice(0, len) + "...";
     } else {
