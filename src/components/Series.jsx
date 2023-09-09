@@ -37,7 +37,7 @@ const Series = ({ title, fetchingURL, serial }) => {
     scrollable_areaR.scrollLeft = scrollable_areaR.scrollLeft + 400;
   };
   const goLeft = () => {
-    var scrollable_areaL = document.getElementById("scrollable-area" + serial);
+    var scrollable_areaL = document.getElementById("scrollable_area" + serial);
     // console.log("scrollable area for Left  is :::::");
     // console.log(scrollable_areaL);
     scrollable_areaL.scrollLeft = scrollable_areaL.scrollLeft - 500;
@@ -51,12 +51,12 @@ const Series = ({ title, fetchingURL, serial }) => {
         <div className="text-2xl text-white mb-4">{title} </div>
         <AiOutlineCaretLeft
           onClick={goLeft}
-          className="hover:bg-gray-200 opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 left-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
+          className="hover:bg-gray-200 cursor-pointer opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 left-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
           size={30}
         ></AiOutlineCaretLeft>
         <AiOutlineCaretRight
           onClick={goRight}
-          className="hover:bg-gray-200 opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 right-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
+          className="hover:bg-gray-200 cursor-pointer opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 right-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
           size={30}
         ></AiOutlineCaretRight>
         {/* div for storing the images and cards */}

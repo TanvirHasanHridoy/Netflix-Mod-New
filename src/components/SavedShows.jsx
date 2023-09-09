@@ -46,7 +46,7 @@ const SavedShows = () => {
       <div className="relative flex items-center group">
         <AiOutlineCaretLeft
           onClick={slideLeft}
-          className="hover:bg-gray-200 opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 left-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
+          className="hover:bg-gray-200 cursor-pointer opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 left-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
           size={40}
         />
         <div
@@ -79,7 +79,7 @@ const SavedShows = () => {
         </div>
         <AiOutlineCaretRight
           onClick={slideRight}
-          className="hover:bg-gray-200 opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 right-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
+          className="hover:bg-gray-200 cursor-pointer opacity-70 p-2 h-10 w-10 rounded-full absolute top-1/2 right-[2%] duration-150 hover:scale-110 hover:text-black text-white bg-gray-900 z-40"
           size={40}
         />
       </div>
