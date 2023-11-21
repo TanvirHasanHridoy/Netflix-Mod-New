@@ -86,7 +86,7 @@ const Main = () => {
         {/* banner/Hero image */}
         <img
           className="w-full h-[550px] object-cover "
-          src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
+          src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path ? movie?.backdrop_path :"r7DuyYJ0N3cD8bRKsR5Ygq2P7oa.jpg"}`}
           alt={movie?.title}
         />
       </div>
