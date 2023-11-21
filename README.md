@@ -1,3 +1,13 @@
+# LIVE LINK>>>
+## @https://hridoy-netflix-clone.vercel.app/
+## ***May trigger some false vulnerability. Please ignore and proceed.\
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
